@@ -6,8 +6,10 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 @SpringBootApplication
 public class TestJenkinsApplication {
 
-	public static void main(String[] args) {
-		SpringApplication.run(TestJenkinsApplication.class, args);
-	}
+//    docker exec jenkins cat /var/jenkins_home/secrets/initialAdminPassword
+    public static void main(String[] args) {
+        SpringApplication.run(TestJenkinsApplication.class, args);
+        System.out.println("hello world");
+    }
 
 }
